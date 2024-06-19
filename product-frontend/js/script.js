@@ -32,6 +32,7 @@ function loadCategories() {
 
 //Load all products
 function loadProducts() {
+    
     $.getJSON("http://localhost:8080/products", (response) => {
         products = response;
         for (let prod of products) {
